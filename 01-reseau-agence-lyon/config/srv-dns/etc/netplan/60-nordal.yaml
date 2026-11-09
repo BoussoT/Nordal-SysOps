@@ -1,0 +1,8 @@
+# srv-dns : adresse fixe sur la carte du réseau nordal
+# Droits attendus : sudo chmod 600 /etc/netplan/*.yaml
+network:
+  version: 2
+  ethernets:
+    ens37:
+      addresses: [192.168.50.10/24]
+      dhcp4: false
