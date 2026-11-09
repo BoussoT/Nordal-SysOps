@@ -1,0 +1,9 @@
+# poste-lyon : carte du réseau nordal, adresse reçue du DHCP de srv-dns
+# use-domains : le poste accepte le domaine nordal.local et envoie ces noms au DNS de srv-dns
+network:
+  version: 2
+  ethernets:
+    ens37:
+      dhcp4: true
+      dhcp4-overrides:
+        use-domains: true

@@ -1,0 +1,8 @@
+# poste-lyon : carte NAT (accès Internet)
+# Corrigé après clonage : l'identification par adresse MAC (celle de srv-dns) a été retirée
+network:
+  version: 2
+  ethernets:
+    ens33:
+      dhcp4: true
+      dhcp6: true
